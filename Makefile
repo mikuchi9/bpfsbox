@@ -1,5 +1,5 @@
-PROG_NAME	:= sandboxp
-KERN_SRC    := sandbox_uid.ebpf.c
+PROG_NAME	:= bpfsbox
+KERN_SRC	:= sandbox_uid.ebpf.c
 USER_SRC	:= user.ebpf.c
 
 CLANG       := clang

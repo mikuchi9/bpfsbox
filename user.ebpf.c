@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
     __u64 cgroup_id = 0;
 
     if (argc < 3 || (argc == 2 && (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0))) {
-        printf("usage is: sudo ./sandboxp <new_cgroup_name> process_pid ...\n");
+        printf("usage is: sudo ./bpfsbox <new_cgroup_name> process_pid ...\n");
         return 1;
     } 
     
