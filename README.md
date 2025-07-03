@@ -51,7 +51,7 @@ This will:
 - Add the specified `process_pid>` to the new cgroup by writing it to `cgroup.procs`
 
 To manually add other processes (not desendants of the initial one) to the same sandboxed group:
-`echo <other_process_pid> | sudo tee /sys/fs/cgroup/<cgroup_name>/cgroup.procs` manually.
+`echo <other_process_pid> | sudo tee /sys/fs/cgroup/<cgroup_name>/cgroup.procs`.
 You can also daemonize `bpfsbox`.
 
 ### 🧪 Simulated Privilege Escalation
