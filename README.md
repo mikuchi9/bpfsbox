@@ -48,9 +48,9 @@ Run your program with:
 `sudo ./bpfsbox <cgroup_name> <process_pid> &`
 This will:
 - Create a new cgroup under `/sys/fs/cgroup/<cgroup_name>/`
-- Add the specified `process_pid>` to the new cgroup by writing it to `cgroup.procs`
+- Add the specified `process_pid` to the new cgroup by writing it to `cgroup.procs`
 
-To manually add other processes (not desendants of the initial one) to the same sandboxed group:
+To manually add other processes (not descendants of the initial one) to the same sandboxed group:
 `echo <other_process_pid> | sudo tee /sys/fs/cgroup/<cgroup_name>/cgroup.procs`.
 You can also daemonize `bpfsbox`.
 
